@@ -44,4 +44,21 @@ public class ScriptableEventTrigger : MonoBehaviour
         UnityEventsToTrigger.Invoke();
     }
 
+    /// <summary>
+    /// Returns true if this trigger's events contains the indicated type of ScriptableEvent.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="scriptableEvent"></param>
+    /// <returns></returns>
+    public bool Contains<T>() where T : ScriptableEvent
+    {
+        foreach (var item in EventsToTrigger)
+            if (item is T)
+                return true;
+
+        // if we get here, there are no ScriptableEvents assigned
+        // to this trigger of the indicated type
+        return false;
+    }
+
 }
