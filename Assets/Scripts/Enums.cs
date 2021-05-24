@@ -1,10 +1,17 @@
 ﻿
+public enum BoolOp
+{
+    True, False, Switch
+}
+
 public enum MathOp
 {
     Add, Sub, Div, Mul
 }
 
-public enum BoolOp
+public enum StartType
 {
-    True, False, Switch
+    Awake,
+    OnEnable,
+    Start
 }
