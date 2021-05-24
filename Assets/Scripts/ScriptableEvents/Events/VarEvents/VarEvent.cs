@@ -44,6 +44,24 @@ public class VarEvent : ScriptableEvent
                     break;
             }
         }
+        else if (Var is BoolVar boolVar)
+        {
+            BoolVarChange change = VarChange as BoolVarChange;
+            switch (change.BoolOp)
+            {
+                case BoolOp.True:
+                    boolVar.Value = true;
+                    break;
+
+                case BoolOp.False:
+                    boolVar.Value = false;
+                    break;
+
+                case BoolOp.Switch:
+                    boolVar.Value = !boolVar.Value;
+                    break;
+            }
+        }
     }
 
 }

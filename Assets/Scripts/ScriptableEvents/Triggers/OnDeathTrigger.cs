@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Health))]
-public class OnDeathTrigger : EventTrigger
+public class OnDeathTrigger : ScriptableEventTrigger
 {
 
     private Health _health;

@@ -292,7 +292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _npcTag: NPC
-  prefab: {fileID: 303007470881528868, guid: 31c3e0fe7c54527468a0ae970a86ee37, type: 3}
 --- !u!50 &901730092
 Rigidbody2D:
   serializedVersion: 4
@@ -762,6 +761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669504287}
   - component: {fileID: 1669504286}
+  - component: {fileID: 1669504288}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -800,6 +800,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669504288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669504285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771d2ceb7ad629e4a961662b62ebe796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventsToTrigger:
+  - {fileID: 11400000, guid: cf6c574b87a4513409e475edbc5df5e3, type: 2}
+  UnityEventsToTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  StartType: 0
 --- !u!1 &1740510649
 GameObject:
   m_ObjectHideFlags: 0

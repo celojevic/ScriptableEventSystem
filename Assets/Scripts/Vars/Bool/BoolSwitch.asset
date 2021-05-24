@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9d2eba316d6d34e838dd5c51ce43e3, type: 3}
-  m_Name: New Var Event
+  m_Script: {fileID: 11500000, guid: 506bb8f483b595647a32baa8a0af0cb5, type: 3}
+  m_Name: New Bool Var Change
   m_EditorClassIdentifier: 
-  MathOp: 0
+  BoolOp: 2

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class OnSpawnTrigger : EventTrigger
+public class OnSpawnTrigger : ScriptableEventTrigger
 {
 
     [Header("On Spawn")]

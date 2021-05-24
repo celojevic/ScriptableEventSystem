@@ -4,7 +4,7 @@
 /// Note: The object with the component or the other collider's object must have a rigidbody for
 /// OnTriggerEnter events to actually trigger.
 /// </summary>
-public class OnTriggerEnterTrigger : EventTrigger
+public class OnTriggerEnterTrigger : ScriptableEventTrigger
 {
 
     [Header("Properties")]

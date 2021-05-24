@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class TimedTrigger : EventTrigger
+public class TimedTrigger : ScriptableEventTrigger
 {
 
     // if both are greater than 0, whichever is earlier will trigger first.
