@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950eb41d0c95dfe49a7443c22c1fe99f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentDialogue: {fileID: 0}
+  _exitKey: 27
 --- !u!1 &950119758
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,14 +875,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669504285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b63445e1930e1bd458489bcccc8890fb, type: 3}
+  m_Script: {fileID: 11500000, guid: e76a33f0acb78d04ab222f04598b0c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EventsToTrigger:
-  - {fileID: 11400000, guid: f414571e9249163468182986586eee65, type: 2}
+  - {fileID: 11400000, guid: 13996c16b5540bb408e91b4292ad7f6d, type: 2}
   UnityEventsToTrigger:
     m_PersistentCalls:
       m_Calls: []
+  Key: 32
 --- !u!1 &1740510649
 GameObject:
   m_ObjectHideFlags: 0
