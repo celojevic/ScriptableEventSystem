@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Conditions/Bool")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Conditions/Bool")]
 public class BoolCondition : Condition<bool>
 {
 

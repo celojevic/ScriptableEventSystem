@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableEvents/Dialogue Event")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Events/Dialogue Event")]
 public class DialogueEvent : ScriptableEvent
 {
 

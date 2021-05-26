@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b8fc3f477a7ac4c959c90a22263c9a, type: 3}
-  m_Name: New Bool Condition
+  m_Script: {fileID: 11500000, guid: 76e50991c6307054f862e3b9e19f2b98, type: 3}
+  m_Name: PlayerNameIsChiken
   m_EditorClassIdentifier: 
-  VarToCompare: {fileID: 11400000, guid: 6156d64d6b79fe848adc9d51c048b7f9, type: 2}
-  EqualityOp: 0
-  ValueToCompare: 0
+  VarToCompare: {fileID: 11400000, guid: 88f63a85cb6fb994f9fcdba2e3cb3b80, type: 2}
+  EqualityOp: 1
+  ValueToCompare: noob
+  VarValueToCompare: {fileID: 0}
   ReverseComparison: 0

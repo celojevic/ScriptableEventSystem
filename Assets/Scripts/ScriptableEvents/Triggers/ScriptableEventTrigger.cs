@@ -44,6 +44,11 @@ public class ScriptableEventTrigger : MonoBehaviour
                 if (!boolCnd.Compare())
                     return false;
             }
+            else if (item is Condition<string> stringCnd)
+            {
+                if (!stringCnd.Compare())
+                    return false;
+            }
         }
 
         // if we get here, all the conditions were met

@@ -3,7 +3,7 @@
 /// <summary>
 /// Spawns the assigned prefab when triggered.
 /// </summary>
-[CreateAssetMenu(menuName = "ScriptableEvents/Spawn Event")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Events/Spawn Event")]
 public class SpawnEvent : ScriptableEvent
 {
 

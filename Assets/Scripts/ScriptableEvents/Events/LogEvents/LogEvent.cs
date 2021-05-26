@@ -3,7 +3,7 @@
 /// <summary>
 /// Event that logs something to the console when triggered.
 /// </summary>
-[CreateAssetMenu(menuName = "ScriptableEvents/Log Event")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Events/Log Event")]
 public class LogEvent : ScriptableEvent
 {
 

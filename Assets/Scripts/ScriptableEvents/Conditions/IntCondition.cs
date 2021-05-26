@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Conditions/Int")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Conditions/Int")]
 public class IntCondition : Condition<int>
 {
 

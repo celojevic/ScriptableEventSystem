@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Vars/Change/Int")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Vars/Change/Int")]
 public class IntVarChange : VarChange
 {
 

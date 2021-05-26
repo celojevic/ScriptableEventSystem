@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Vars/Change/Bool")]
+[CreateAssetMenu(menuName = "ScriptableEvents/Vars/Change/Bool")]
 public class BoolVarChange : VarChange
 {
 
