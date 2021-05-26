@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "Vars/Var/Bool")]
-public class BoolVar : Var
-{
-    public bool Value;
-}
+public class BoolVar : Var<bool> { }
