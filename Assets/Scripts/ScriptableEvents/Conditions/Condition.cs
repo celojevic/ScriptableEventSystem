@@ -12,6 +12,9 @@ public abstract class Condition<T> : Condition where T : System.IComparable<T>
     [Tooltip("The Value to compare to the Var's value.")]
     public T ValueToCompare;
 
+    [Tooltip("If true, the comparison result is reversed.")]
+    public bool ReverseComparison = false;
+
     #region Editor
 #if UNITY_EDITOR
 
@@ -51,36 +54,39 @@ public abstract class Condition<T> : Condition where T : System.IComparable<T>
     /// <returns></returns>
     public bool Compare()
     {
+        bool value;
+
         switch (EqualityOp)
         {
             case EqualityOp.NotEqualTo:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) != 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) != 0);
                 break;
             case EqualityOp.EqualTo:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) == 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) == 0);
                 break;
 
             case EqualityOp.LessThan:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) < 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) < 0);
                 break;
             case EqualityOp.GreaterThan:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) > 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) > 0);
                 break;
 
             case EqualityOp.LessThanOrEqualTo:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) <= 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) <= 0);
                 break;
             case EqualityOp.GreaterThanOrEqualTo:
-                if (VarToCompare.Value.CompareTo(ValueToCompare) >= 0)
-                    return true;
+                value = (VarToCompare.Value.CompareTo(ValueToCompare) >= 0);
                 break;
+
+            default:
+                return false;
         }
-        return false;
+
+        if (ReverseComparison)
+            value = !value;
+
+        return value;
     }
 
 }
